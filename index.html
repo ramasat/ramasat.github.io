@@ -7,7 +7,8 @@
   <body>
 <!--    <div id="overlay"></div>            -->
     <div id="backgroundvideo">
-        <video id=bgvideo width="1280" height="720" autoplay muted="muted">
+<!--        <video id=bgvideo width="1280" height="720" autoplay muted="muted">     -->
+        <video id=bgvideo width="100%" autoplay muted="muted">
             <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/8/88/Big_Buck_Bunny_alt.webm/Big_Buck_Bunny_alt.webm.360p.vp9.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
@@ -32,7 +33,10 @@
     </div>
     <script>
         window.onload = function() {
-        document.getElementById("vidwindow").play();
+        document.getElementById("bgvideo").play();
+        document.getElementById("vidwindow1").play();
+        document.getElementById("vidwindow2").play();
+        document.getElementById("vidwindow3").play();
     }
     </script>
   </body>
