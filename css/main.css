@@ -1,3 +1,10 @@
+div#backgroundvideo {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: rgba(225, 225, 208, 0.3);
+}
+
 div#chatpan1 {
   position: absolute;
   top: 30px;
@@ -5,7 +12,7 @@ div#chatpan1 {
   width: 320px;
   height: 180px;
   margin: auto;
-  background-color: rgba(225, 225, 208, 0.3);
+  background-color: rgba(225, 225, 208, 0.7);
 }
 
 div#chatpan2 {
@@ -15,7 +22,7 @@ div#chatpan2 {
   width: 320px;
   height: 180px;
   margin: auto;
-  background-color: rgba(225, 225, 208, 0.3);
+  background-color: rgba(225, 225, 208, 0.7);
 }
 
 div#chatpan3 {
@@ -25,7 +32,7 @@ div#chatpan3 {
   width: 320px;
   height: 180px;
   margin: auto;
-  background-color: rgba(225, 225, 208, 0.3);
+  background-color: rgba(225, 225, 208, 0.7);
 }
 
 div#overlay{
