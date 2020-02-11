@@ -4,6 +4,7 @@
     <title>Multi Video Window Chat</title>
     <link rel="stylesheet" href="css/main.css" />
     <script language="JavaScript" type="text/javascript" src=js/main.js></script>
+    <script language="JavaScript" type="text/javascript" src=js/nav.js></script>
   </head>
 
   <body>
@@ -16,26 +17,20 @@
     </div>
     <div id="selectionpan1">
         <label for="url1" style="font-size:24px">URL:</label>
-        <select id="url1" style="font-size:24px" onchange="handleselection(this);">
-          <option value="BigBuckBunny">BigBuckBunny</option>
-          <option value="ElephantsDream">ElephantsDream</option>
-          <option value="Glazing-Doughnuts">GlazingDoughnuts</option>          
-        </select>
+        <button id="BBBButton" style="font-size:24px" onclick="HandleOnClick(this);">BigBugBunny</button>
+        <button id="EDButton" style="font-size:24px" onclick="HandleOnClick(this);">ElephantDream</button>
+        <button id="GDButton" style="font-size:24px" onclick="HandleOnClick(this);">GlazingDoughnuts</button>
     </div>
     <div id="selectionpan2">
         <label for="position" style="font-size:24px">Position:</label>
-        <select id="position" style="font-size:24px" onchange="handleselection(this);">
-          <option value="top">Top</option>
-          <option value="middle">Middle</option>
-          <option value="bottom">Bottom</option>          
-        </select>
+        <button id="TopButton" style="font-size:24px" onclick="HandleOnClick(this);">Top</button>
+        <button id="MidButton" style="font-size:24px" onclick="HandleOnClick(this);">Middle</button>
+        <button id="BottomButton" style="font-size:24px" onclick="HandleOnClick(this);">Bottom</button>
     </div>
     <div id="selectionpan3">
         <label for="widthheight" style="font-size:24px">Width(Auto Adjust Height):</label>
-        <select id="widthheight" style="font-size:24px" onchange="handleselection(this);">
-          <option value="320">320</option>
-          <option value="160">160</option>
-        </select>
+        <button id="320Button" style="font-size:24px" onclick="HandleOnClick(this);">320</button>
+        <button id="160Button" style="font-size:24px" onclick="HandleOnClick(this);">160</button>        
     </div>
   </body>
 </html>
