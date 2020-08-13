@@ -42,6 +42,7 @@ function HandleOnClick(obj) {
         }
         console.log("Play now!!"); 
         vid_elm.currentTime = 0;
+        console.log("Video Element: " + vid_elm.id + " Source: " + vid_elm.src);
         vid_elm.play();
     }
     /*else if( (obj.id == "TopButton") || (obj.id == "MidButton") ||(obj.id == "BottomButton") ) {
