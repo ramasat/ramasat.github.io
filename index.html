@@ -42,17 +42,3 @@
     </div>
   </body>
 </html>
-
-
-
-gst-launch-1.0 filesrc location=/opt/pendrive/nuance/sample/hello_ve/bin/hello_ve.pcm ! capsfilter caps ="audio/x-raw, width=16, depth=16, endianness=1234 , channels=1, rate=22000, signed=true" ! brcmpcmsink
-gst-launch-1.0 filesrc location=/opt/pendrive/nuance/sample/hello_ve/bin/hello_ve.pcm !rawaudioparse ! audioconvert ! audioresample ! autoaudiosink
-
-gst-launch-1.0 filesrc location=/opt/pendrive/nuance/sample/hello_ve/bin/hello_ve.pcm ! parsebin raw-format=s16le channels=1, rate=22000 ! brcmpcmsink
-
-
-gst-launch-1.0 filesrc location=/opt/pendrive/nuance/sample/hello_ve/bin/hello_ve.pcm ! audio/x-raw, format=s16le, channels=1, rate=22000 ! brcmpcmsink
-
-gst-launch-1.0 filesrc location=./hello_ve.pcm ! capsfilter caps=audio/x-raw, format=s16le, channels=1, rate=22000 ! autoaudiosink
-
-gst-launch-1.0 -v filesrc location=/opt/pendrive/nuance/sample/hello_ve/bin/hello_ve.pcm ! queue ! brcmmp3decoder ! brcmpcmsink
