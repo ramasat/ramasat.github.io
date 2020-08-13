@@ -78,5 +78,5 @@ window.onload = function() {
     buttonList[currentFocus].focus();
 
     // Add keydown handler
-    window.addEventListener('keydown', handleKeydown, false);
+    window.addEventListener('keyup', handleKeydown, false);
 }
