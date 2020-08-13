@@ -6,6 +6,8 @@ var prevFocus = 0;
 var buttonList = [];
 
 function handleKeydown(e) {
+    console.log("Handle Key Down: " + e.keyCode);
+    
     currentFocus = currentFocus || 0;
    
     switch (e.keyCode) {
@@ -76,5 +78,5 @@ window.onload = function() {
     buttonList[currentFocus].focus();
 
     // Add keydown handler
-    window.addEventListener('keydown', handleKeydown, false);
+    window.addEventListener('keyup', handleKeydown, false);
 }
