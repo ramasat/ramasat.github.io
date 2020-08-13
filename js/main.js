@@ -4,7 +4,7 @@ function HandleOnClick(obj) {
     //var vidsource = document.getElementById("videosource1");
     var isPlaying;
                     
-    if( (obj.id == "BBBButton") ) /*|| (obj.id == "EDButton") ||(obj.id == "GDButton") ) */ {
+    if( (obj.id == "BBBButton") || (obj.id == "EDButton") ||(obj.id == "GDButton") ) {
         console.log("Handle URL!!");        
         switch(obj.id)
         {

@@ -12,7 +12,7 @@ function handleKeydown(e) {
    
     switch (e.keyCode) {
         case BTN_OK:
-            buttonList[currentFocus].click();
+            //buttonList[currentFocus].click();
             break;
 
         case BTN_LEFT:
