@@ -21,7 +21,9 @@ function handleKeydown(e) {
                 currentFocus -= 1;
             else
                 currentFocus = buttonList.length - 1;
+            console.log("Set previously focused button " + buttonList[prevFocus].id + " to BLUE");
             buttonList[prevFocus].style.background = '#00A2E8';
+            console.log("And, Set currently focused button " + buttonList[currentFocus].id + " to ORANGE");
             buttonList[currentFocus].style.background = '#FF7F27';
             buttonList[currentFocus].focus();
             break;
@@ -31,7 +33,9 @@ function handleKeydown(e) {
             currentFocus += 1;
             if(currentFocus == buttonList.length)
                 currentFocus = 0;
+            console.log("Set previously focused button " + buttonList[prevFocus].id + " to BLUE");
             buttonList[prevFocus].style.background = '#00A2E8';
+            console.log("And, Set currently focused button " + buttonList[currentFocus].id + " to ORANGE");            
             buttonList[currentFocus].style.background = '#FF7F27';
             buttonList[currentFocus].focus();
             break;
@@ -44,7 +48,9 @@ function handleKeydown(e) {
                 currentFocus = 0;
             else if(currentFocus >= 6)
                 currentFocus = 3;
+            console.log("Set previously focused button " + buttonList[prevFocus].id + " to BLUE");
             buttonList[prevFocus].style.background = '#00A2E8';
+            console.log("And, Set currently focused button " + buttonList[currentFocus].id + " to ORANGE");            
             buttonList[currentFocus].style.background = '#FF7F27';
             buttonList[currentFocus].focus();
             break;
@@ -57,7 +63,9 @@ function handleKeydown(e) {
                 currentFocus = 6;
             else if(currentFocus >= 6)
                 currentFocus = 0;
+            console.log("Set previously focused button " + buttonList[prevFocus].id + " to BLUE");
             buttonList[prevFocus].style.background = '#00A2E8';
+            console.log("And, Set currently focused button " + buttonList[currentFocus].id + " to ORANGE");
             buttonList[currentFocus].style.background = '#FF7F27';
             buttonList[currentFocus].focus();
             break;
@@ -71,9 +79,12 @@ window.onload = function() {
     currentFocus = 0;
     buttonList = document.getElementsByTagName("button");
     arrayLength = buttonList.length;
+    console.log("*******On Load*********");
     for (var i = 0; i < arrayLength; i++) {
+        console.log("Set button " + buttonList[i].id + " to BLUE");
         buttonList[i].style.background = '#00A2E8';
     }
+    console.log("And, Set currently focused button " + buttonList[currentFocus].id + " to ORANGE");
     buttonList[currentFocus].style.background = '#FF7F27';
     buttonList[currentFocus].focus();
 
