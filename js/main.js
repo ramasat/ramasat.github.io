@@ -4,30 +4,33 @@ function HandleOnClick(obj) {
     var vidsource= document.getElementById("videosource");
                     
     if( (obj.id == "BBBButton") || (obj.id == "EDButton") ||(obj.id == "GDButton") ) {
-        console.log("Handle URL!!");
-        vid_elm.pause();
+        console.log("Handle URL!!");        
         switch(obj.id)
         {
             case "BBBButton":
+                vid_elm = document.getElementById("vidwindow1");
                 vidsource.src = "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/88/Big_Buck_Bunny_alt.webm/Big_Buck_Bunny_alt.webm.360p.vp9.webm";
                 vidsource.type = "video/webm"
                 break;
             
             case "EDButton":
+                vid_elm = document.getElementById("vidwindow2");
                 vidsource.src = "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a2/Elephants_Dream_%282006%29.webm/Elephants_Dream_%282006%29.webm.360p.vp9.webm";
                 vidsource.type = "video/webm"
                 break;
                 
             case "GDButton":
+                vid_elm = document.getElementById("vidwindow3");
                 vidsource.src = "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/Glazing-Doughnuts.webm/Glazing-Doughnuts.webm.360p.vp9.webm";
                 vidsource.type = "video/webm"
                 break;
         }
+        vid_elm.pause();
         vid_elm.load();
         vid_elm.currentTime = 0;
         vid_elm.play();
     }
-    else if( (obj.id == "TopButton") || (obj.id == "MidButton") ||(obj.id == "BottomButton") ) {
+    /*else if( (obj.id == "TopButton") || (obj.id == "MidButton") ||(obj.id == "BottomButton") ) {
         vid_elm.pause();
         switch(obj.id)
         {
@@ -67,5 +70,5 @@ function HandleOnClick(obj) {
         vid_elm.load();
         vid_elm.currentTime = 0;
         vid_elm.play();
-    }
+    }*/
 }
